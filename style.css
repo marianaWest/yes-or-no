@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+}
+
+html {
+    font-size: 62.5;
+}
+
+h1 {
+    color: white;
+    border: solid red 1px;
+    margin: 0 auto;
+    text-align: center;
+    height: 10vh;
+}
+
+input {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    height: 5vh;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+p {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}

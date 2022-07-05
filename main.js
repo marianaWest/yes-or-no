@@ -1,22 +1,34 @@
-let result = document.getElementById("result");
+const result = document.getElementById("result");
+
+    
 
 document.querySelector('button').addEventListener('click', event => {
-    let userQuestion = document.getElementById("user-question").value;
-    // first, make sure the user enters a question
+    const userQuestion = document.getElementById("user-question").value;
+    
+    const img = document.querySelector(".algo-img");
+    const algoAnswer = img;
+
+    // to make the question section disappear on click
+    document.querySelector('.question').classList.add('hidden');
+
+    // const algoAnswerButton = document.createElement("button");
+    // document.querySelector(".answer").appendChild(algoAnswerButton);
+
+    // to make sure the user enters a question
     if (userQuestion == "") {
-        result.innerHTML = "enter question";
+        img.src="img/question.PNG";
     } else {
         let answer = Math.random();
-        let algoAnswer = "";
-      
-           if (answer < 0.33) {
-               algoAnswer = "YES";
+            if (answer < 0.33) {
+            img.src="img/yes.png"
             } else if (answer > 0.33 && answer < 0.66) {
-                algoAnswer = "NO";
+                img.src="img/no.jpg";               
             } else {
-                algoAnswer = "neither yes, nor no";
+               img.src = "img/neither.PNG";
             };
-            result.innerHTML = algoAnswer;
-    }  
-    });
+    }
+      });
+
+      // to make question re-appear
+
 

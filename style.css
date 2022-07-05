@@ -27,10 +27,16 @@ button {
     text-align: center;
     color: white;
     background-color: black;
+    border: red 1px solid;
+    height: 100px;
 }
 
 p {
     color: white;
     margin: 0 auto;
     text-align: center;
+}
+
+.hidden {
+    display: none;
 }

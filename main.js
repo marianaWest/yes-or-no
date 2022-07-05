@@ -1,18 +1,12 @@
-const result = document.getElementById("result");
+const img = document.querySelector(".algo-img");
+const algoAnswer = img;
 
-    
 
-document.querySelector('button').addEventListener('click', event => {
+document.querySelector('.algo-asks').addEventListener('click', event => {
     const userQuestion = document.getElementById("user-question").value;
-    
-    const img = document.querySelector(".algo-img");
-    const algoAnswer = img;
 
     // to make the question section disappear on click
     document.querySelector('.question').classList.add('hidden');
-
-    // const algoAnswerButton = document.createElement("button");
-    // document.querySelector(".answer").appendChild(algoAnswerButton);
 
     // to make sure the user enters a question
     if (userQuestion == "") {
@@ -30,5 +24,11 @@ document.querySelector('button').addEventListener('click', event => {
       });
 
       // to make question re-appear
+
+      document.getElementById("result").addEventListener('click', event => {
+        document.querySelector('.question').classList.remove('hidden');
+        img.src="img/black.PNG"
+      })
+
 
 

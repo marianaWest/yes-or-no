@@ -1,6 +1,5 @@
 body {
     background-color: black;
-    padding-top: 15vh;
 }
 
 html {
@@ -10,6 +9,7 @@ html {
 h1 {
     color: white;
     margin: 0 auto;
+    margin-top: 200px;
     height: 10vh;
     text-align: center;
     font-size: 2rem;
@@ -23,16 +23,23 @@ input {
     height: 5vh;
     width: 50vw;
     font-family: 'Syne Mono', monospace;
+    font-size: 1.4rem;
 }
 
-button {
+.algo-answers {
     display: block;
     margin: 0 auto;
     text-align: center;
     color: white;
     background-color: black;
-    border: 1px solid transparent;
-    height: 100px;
+    height: 10vh;
+    font-family: 'Syne Mono', monospace;
+    font-size: 5rem;
+}
+
+.algo-answers:hover {
+    font-weight: bolder;
+    color: yellow;
 }
 
 p {
@@ -47,8 +54,13 @@ p {
 
 .algo-asks {
     font-size: 1.6rem;
-    font-family: 'Syne Mono', monospace;;
-    
+    font-family: 'Syne Mono', monospace;   
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    background-color: black;
+    height: 100px;
 }
 
 .algo-asks:hover {
@@ -64,6 +76,5 @@ p {
     h1 {
         margin-bottom: 30px;
     }
-    }
-}
+  }
 

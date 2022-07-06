@@ -10,15 +10,15 @@ document.querySelector('.algo-asks').addEventListener('click', event => {
 
     // to make sure the user enters a question
     if (userQuestion == "") {
-        img.src="img/question.PNG";
+        img.src="img/question1024px.PNG";
     } else {
         let answer = Math.random();
             if (answer < 0.33) {
-            img.src="img/yes.png"
+            img.src="img/YES1024px.png"
             } else if (answer > 0.33 && answer < 0.66) {
-                img.src="img/no.jpg";               
+                img.src="img/NO1024px.png";               
             } else {
-               img.src = "img/neither.PNG";
+               img.src = "img/neither1024px.png";
             };
     }
       });

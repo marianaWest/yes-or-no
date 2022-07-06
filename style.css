@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    padding-top: 15vh;
 }
 
 html {
@@ -8,10 +9,11 @@ html {
 
 h1 {
     color: white;
-    border: solid red 1px;
     margin: 0 auto;
-    text-align: center;
     height: 10vh;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Syne Mono', monospace;
 }
 
 input {
@@ -19,6 +21,8 @@ input {
     margin: 0 auto;
     text-align: center;
     height: 5vh;
+    width: 50vw;
+    font-family: 'Syne Mono', monospace;
 }
 
 button {
@@ -27,7 +31,7 @@ button {
     text-align: center;
     color: white;
     background-color: black;
-    border: red 1px solid;
+    border: 1px solid transparent;
     height: 100px;
 }
 
@@ -40,3 +44,26 @@ p {
 .hidden {
     display: none;
 }
+
+.algo-asks {
+    font-size: 1.6rem;
+    font-family: 'Syne Mono', monospace;;
+    
+}
+
+.algo-asks:hover {
+    font-weight: bolder;
+}
+
+#result {
+    height: 70vh;
+    width: 80vw;
+}
+
+@media all and (max-width: 455px) {
+    h1 {
+        margin-bottom: 30px;
+    }
+    }
+}
+

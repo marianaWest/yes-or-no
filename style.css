@@ -29,23 +29,18 @@ input {
 .algo-answers {
     display: block;
     margin: 0 auto;
+    margin-top: 30vh;
     text-align: center;
     color: white;
     background-color: black;
-    height: 10vh;
     font-family: 'Syne Mono', monospace;
     font-size: 5rem;
+    height: 40vh;
+    width: 80vw;
 }
 
 .algo-answers:hover {
     font-weight: bolder;
-    color: yellow;
-}
-
-p {
-    color: white;
-    margin: 0 auto;
-    text-align: center;
 }
 
 .hidden {
@@ -67,14 +62,22 @@ p {
     font-weight: bolder;
 }
 
-#result {
-    height: 70vh;
-    width: 80vw;
-}
+@media all and (max-width: 265px) {
+    h1 {
+        margin-bottom: 50px;
+        font-size: 1.6rem;
+    }
+    .algo-answers {
+        font-size: 2rem;
+    }
+  }
 
 @media all and (max-width: 455px) {
     h1 {
         margin-bottom: 30px;
+    }
+    .algo-answers {
+        font-size: 2rem;
     }
   }
 

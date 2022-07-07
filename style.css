@@ -63,7 +63,7 @@ input {
 }
 
 button {
-    border: 1px solid transparent;
+    border: 1px solid black;
 }
 
 @media all and (max-width: 265px) {

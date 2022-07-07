@@ -62,6 +62,10 @@ input {
     font-weight: bolder;
 }
 
+button {
+    border: 1px solid transparent;
+}
+
 @media all and (max-width: 265px) {
     h1 {
         margin-bottom: 50px;
